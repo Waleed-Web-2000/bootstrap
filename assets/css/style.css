@@ -1,0 +1,120 @@
+
+      body {
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .navbar {
+        background-color: black;
+        margin-top: -14px;
+      }
+      .navbar a, .navbar button {
+        color: white;
+      }
+      .navbar a.nav-link.active {
+        color: #0d6efd;
+      }
+      .navbar a.nav-link {
+        color: white;
+      }
+      .navbar a.nav-link:hover {
+        color: #0d6efd;
+      }
+      .navbar-toggler {
+        background-color: white;
+        border: 10px;
+      }
+      .navbar-toggler-icon {
+      }
+
+
+
+      /* Custom Styling for Footer */
+    .footer {
+      background-color: #000000;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .footer h5 {
+      color: white;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .footer p {
+      color: #dddddd;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #0d6efd;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      background-color: #ffecb5;
+      text-align: center;
+    }
+
+    /* Social media icons */
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 18px;
+      color: white;
+    }
+
+    .social-icons a:hover {
+      color: #0d6efd;
+    }
+
+
+
+     .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      color: #0d6efd;
+      font-weight: bold;
+    }
+
+    .product-description {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Custom Padding */
+    .product-card-body {
+      padding: 20px;
+    }
+
+    .product-card-body .btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
