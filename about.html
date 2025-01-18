@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <title>Shop | Testing</title>
+    <title>About | Testing</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -63,121 +63,41 @@
   <nav aria-label="breadcrumb" class="p-3">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Shop</li>
+      <li class="breadcrumb-item active" aria-current="page">About</li>
     </ol>
   </nav>
 </section>
 
-<section class="container-fluid mb-5">
-  <div class="row">
-    <!-- Sidebar for Filters and Categories -->
-    <aside class="col-md-3 col-lg-2 bg-black p-4 rounded text-white mb-3">
-      <h4 class="text-center mb-4">Filters</h4>
-      
-      <!-- Categories Dropdown -->
-      <div class="mb-4">
-        <h5>Categories</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Category
-          </button>
-          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
-            <li><a class="dropdown-item" href="#">Category 1</a></li>
-            <li><a class="dropdown-item" href="#">Category 2</a></li>
-            <li><a class="dropdown-item" href="#">Category 3</a></li>
-            <li><a class="dropdown-item" href="#">Category 4</a></li>
-          </ul>
-        </div>
+
+
+<section class="about-us py-5" style="background-color: #000;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- About Image -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <img src="images/1.png" alt="About Us" width="500" height="500" class="img-fluid rounded shadow-lg">
       </div>
 
-      <div class="mb-4">
-        <h5>Latest Items</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Items
-          </button>
-          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
-            <li><a class="dropdown-item" href="#">Item 1</a></li>
-            <li><a class="dropdown-item" href="#">Item 2</a></li>
-            <li><a class="dropdown-item" href="#">Item 3</a></li>
-            <li><a class="dropdown-item" href="#">Item 4</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Price Range Filter -->
-      <div class="mb-4">
-        <h5>Price Range</h5>
-        <input type="range" class="form-range" id="priceRange" min="0" max="100" step="5">
-        <p class="text-center" id="priceValue">$0 - $100</p>
-      </div>
-
-      <!-- More Filters can be added here -->
-    </aside>
-
-    <!-- Main Content: Products -->
-    <div class="col-md-9 col-lg-10">
-      <h2 class="text-center mb-4">Our Latest Items</h2>
-
-      <!-- Row for Products -->
-      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <!-- Product 1 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 1" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 1</h5>
-              <p class="card-text">This is a short description of Product 1.</p>
-              <p class="card-price text-muted">$29.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 2" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 2</h5>
-              <p class="card-text">A great product for everyday use. Reliable!</p>
-              <p class="card-price text-muted">$39.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 3" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 3</h5>
-              <p class="card-text">Stylish and functional. Perfect for any occasion.</p>
-              <p class="card-price text-muted">$49.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 4" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 4</h5>
-              <p class="card-text">High-quality product that offers great value.</p>
-              <p class="card-price text-muted">$59.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Repeat Products as needed -->
+      <!-- About Content -->
+      <div class="col-lg-6 col-md-12">
+        <h2 class="display-4 text-white mb-3">About Us</h2>
+        <p class="lead text-muted mb-4">
+          We are a passionate team dedicated to bringing you the best products and services. Our mission is to provide top-notch solutions and excellent customer service.
+        </p>
+        <p class="text-muted mb-4">
+          Founded in [Year], our company has always been committed to delivering high-quality goods and maintaining strong relationships with our customers. We aim to revolutionize the industry with our innovative approach.
+        </p>
+        <ul class="list-unstyled text-muted">
+          <li><strong>Founded:</strong> [Year]</li>
+          <li><strong>Location:</strong> [City, Country]</li>
+          <li><strong>Mission:</strong> Delivering excellence with passion.</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-lg mt-4">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
+
 
 
 

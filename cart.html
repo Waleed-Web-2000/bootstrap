@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <title>Shop | Testing</title>
+    <title>Cart | Testing</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -60,120 +60,120 @@
 
     
     <section>
-  <nav aria-label="breadcrumb" class="p-3">
+  <nav aria-label="breadcrumb" class="p-3" style="background-color: #343a40;">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Shop</li>
+      <li class="breadcrumb-item active" aria-current="page">Cart</li>
     </ol>
   </nav>
 </section>
 
-<section class="container-fluid mb-5">
-  <div class="row">
-    <!-- Sidebar for Filters and Categories -->
-    <aside class="col-md-3 col-lg-2 bg-black p-4 rounded text-white mb-3">
-      <h4 class="text-center mb-4">Filters</h4>
-      
-      <!-- Categories Dropdown -->
-      <div class="mb-4">
-        <h5>Categories</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Category
-          </button>
-          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
-            <li><a class="dropdown-item" href="#">Category 1</a></li>
-            <li><a class="dropdown-item" href="#">Category 2</a></li>
-            <li><a class="dropdown-item" href="#">Category 3</a></li>
-            <li><a class="dropdown-item" href="#">Category 4</a></li>
-          </ul>
+
+
+<section class="cart-page py-5" style="background-color: #343a40; color: #ffffff;">
+  <div class="container">
+    <h2 class="text-center text-light mb-4">Your Shopping Cart</h2>
+
+    <div class="row">
+      <!-- Cart Items -->
+      <div class="col-lg-8 col-md-12">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-dark">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Cart Item 1 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100" alt="Product 1" class="img-fluid rounded-circle" width="60">
+                    <span class="ms-3">Product 1</span>
+                  </div>
+                </td>
+                <td>$29.99</td>
+                <td>
+                  <input type="number" class="form-control" value="1" min="1">
+                </td>
+                <td>$29.99</td>
+                <td>
+                  <button class="btn btn-danger btn-sm">Remove</button>
+                </td>
+              </tr>
+
+              <!-- Cart Item 2 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100" alt="Product 2" class="img-fluid rounded-circle" width="60">
+                    <span class="ms-3">Product 2</span>
+                  </div>
+                </td>
+                <td>$39.99</td>
+                <td>
+                  <input type="number" class="form-control" value="1" min="1">
+                </td>
+                <td>$39.99</td>
+                <td>
+                  <button class="btn btn-danger btn-sm">Remove</button>
+                </td>
+              </tr>
+
+              <!-- Cart Item 3 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100" alt="Product 3" class="img-fluid rounded-circle" width="60">
+                    <span class="ms-3">Product 3</span>
+                  </div>
+                </td>
+                <td>$49.99</td>
+                <td>
+                  <input type="number" class="form-control" value="1" min="1">
+                </td>
+                <td>$49.99</td>
+                <td>
+                  <button class="btn btn-danger btn-sm">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <div class="mb-4">
-        <h5>Latest Items</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Items
-          </button>
-          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
-            <li><a class="dropdown-item" href="#">Item 1</a></li>
-            <li><a class="dropdown-item" href="#">Item 2</a></li>
-            <li><a class="dropdown-item" href="#">Item 3</a></li>
-            <li><a class="dropdown-item" href="#">Item 4</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Price Range Filter -->
-      <div class="mb-4">
-        <h5>Price Range</h5>
-        <input type="range" class="form-range" id="priceRange" min="0" max="100" step="5">
-        <p class="text-center" id="priceValue">$0 - $100</p>
-      </div>
-
-      <!-- More Filters can be added here -->
-    </aside>
-
-    <!-- Main Content: Products -->
-    <div class="col-md-9 col-lg-10">
-      <h2 class="text-center mb-4">Our Latest Items</h2>
-
-      <!-- Row for Products -->
-      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <!-- Product 1 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 1" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 1</h5>
-              <p class="card-text">This is a short description of Product 1.</p>
-              <p class="card-price text-muted">$29.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+      <!-- Cart Summary -->
+      <div class="col-lg-4 col-md-12 mt-4 mt-lg-0">
+        <div class="card text-white" style="background-color: #495057;">
+          <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Cart Summary</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span>Subtotal:</span>
+              <span>$119.97</span>
             </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Shipping:</span>
+              <span>$10.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Tax:</span>
+              <span>$8.00</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+              <h5>Total:</h5>
+              <h5>$137.97</h5>
+            </div>
+            <a href="#checkout" class="btn btn-success w-100 mt-4">Proceed to Checkout</a>
           </div>
         </div>
-
-        <!-- Product 2 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 2" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 2</h5>
-              <p class="card-text">A great product for everyday use. Reliable!</p>
-              <p class="card-price text-muted">$39.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 3" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 3</h5>
-              <p class="card-text">Stylish and functional. Perfect for any occasion.</p>
-              <p class="card-price text-muted">$49.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="col">
-          <div class="card shadow-sm border-light rounded">
-            <img src="images/1.png" alt="Product 4" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Product 4</h5>
-              <p class="card-text">High-quality product that offers great value.</p>
-              <p class="card-price text-muted">$59.99</p>
-              <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Repeat Products as needed -->
       </div>
     </div>
   </div>
@@ -181,8 +181,11 @@
 
 
 
+
+
+
     <!-- Footer Section -->
-    <footer class="footer mt-5">
+    <footer class="footer">
     <div class="container">
       <div class="row">
         <!-- About Us Section -->
