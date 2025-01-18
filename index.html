@@ -59,16 +59,28 @@
 
     
     <section class="bg-primary">
-      <div class="carousel bg-primary carousel-dark">
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/banner.webp" class="d-block w-100" alt="Banner Image" height="300">
-            
-          </div>   
-        </div> 
+  <div class="carousel bg-primary carousel-dark">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- Preload Image for Faster LCP -->
+        <link rel="preload" href="images/banner.webp" as="image">
+
+        <!-- Responsive Image with srcset and Lazy Loading -->
+        <img 
+          src="images/banner-300.webp" 
+          srcset="images/banner.webp 600w, 
+                  images/banner.webp 1200w, 
+                  images/banner.webp 1800w" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 100vw, 100vw" 
+          class="d-block w-100" 
+          alt="Banner Image" 
+          height="300" 
+          loading="lazy">
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
 <!-- <section>
   <div class="container text-center">
@@ -106,7 +118,7 @@
 </section> -->
 
 
-<section class="container my-5">
+<section class="container mb-5">
     <div class="row p-5 text-center">
       <div class="col-12">
         <h2 class="text-uppercase">Our Latest Items</h2>
