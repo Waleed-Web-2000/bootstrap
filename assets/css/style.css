@@ -29,7 +29,7 @@
 
 
 
-      /* Custom Styling for Footer */
+    /* Custom Styling for Footer */
     .footer {
       background-color: #000000;
       color: white;
@@ -88,10 +88,19 @@
     }
 
     .product-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+        width: 100%;
+        height: auto;
+      }
+      .banner-title, .banner-subtitle {
+        font-weight: bold;
+      }
+      .product-card-body {
+        padding: 15px;
+      }
+      .social-icons a {
+        padding-right: 10px;
+        font-size: 1.5rem;
+      }
 
     .product-title {
       font-size: 1.25rem;
