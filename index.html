@@ -66,7 +66,7 @@
     </header>
 
     
-    <section class="banner-section">
+   <section class="banner-section">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6 col-12 text-center">
@@ -75,12 +75,13 @@
         <a href="#shop" class="btn btn-primary">Shop Now</a>
       </div>
       <div class="col-lg-6 col-md-6 col-12 text-center">
-        <!-- Optimized SVG Image -->
-        <img src="images/banner.svg" alt="Banner" class="img-fluid" width="1920" height="600">
+        <!-- Optimized SVG Image with lazy loading -->
+        <img src="images/banner.svg" alt="Banner" class="img-fluid" width="1920" height="600" loading="lazy">
       </div>
     </div>
   </div>
 </section>
+
 
 
 
@@ -121,121 +122,68 @@
 
 
 <section class="container mb-5">
-    <div class="row p-5 text-center">
-      <div class="col-12">
-        <h2 class="text-uppercase">Our Latest Items</h2>
-        <p class="lead">Latest updates and articles in Technology</p>
+  <div class="row p-5 text-center">
+    <div class="col-12">
+      <h2 class="text-uppercase">Our Latest Items</h2>
+      <p class="lead">Latest updates and articles in Technology</p>
+    </div>
+  </div>
+
+  <!-- Row for Products -->
+  <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Product 1 -->
+    <div class="col">
+      <div class="product-card">
+        <img src="images/1.png" alt="Product 1" class="product-img" width="100%" height="auto">
+        <div class="product-card-body">
+          <h5 class="product-title">Product 1</h5>
+          <p class="product-description">This is a short description of Product 1. </p>
+          <p class="product-price">$29.99</p>
+          <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
       </div>
     </div>
 
-    <!-- Row for Products -->
-    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
-      <!-- Product 1 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 1" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 1</h5>
-            <p class="product-description">This is a short description of Product 1. </p>
-            <p class="product-price">$29.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
+    <div class="col">
+      <div class="product-card">
+        <img src="images/1.png" alt="Product 1" class="product-img" width="100%" height="auto">
+        <div class="product-card-body">
+          <h5 class="product-title">Product 1</h5>
+          <p class="product-description">This is a short description of Product 1. </p>
+          <p class="product-price">$29.99</p>
+          <a href="#" class="btn btn-primary w-100">Add to Cart</a>
         </div>
       </div>
-
-      <!-- Product 2 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 2" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 2</h5>
-            <p class="product-description">A great product for everyday use. Reliable and affordable!</p>
-            <p class="product-price">$39.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 3" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 3</h5>
-            <p class="product-description">Stylish and functional. Perfect for any occasion.</p>
-            <p class="product-price">$49.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 4" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 4</h5>
-            <p class="product-description">High-quality product that offers great value for money.</p>
-            <p class="product-price">$59.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 1 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 1" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 1</h5>
-            <p class="product-description">This is a short description of Product 1. </p>
-            <p class="product-price">$29.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 2" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 2</h5>
-            <p class="product-description">A great product for everyday use. Reliable and affordable!</p>
-            <p class="product-price">$39.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 3" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 3</h5>
-            <p class="product-description">Stylish and functional. Perfect for any occasion.</p>
-            <p class="product-price">$49.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col">
-        <div class="product-card">
-          <img src="images/1.png" alt="Product 4" class="product-img">
-          <div class="product-card-body">
-            <h5 class="product-title">Product 4</h5>
-            <p class="product-description">High-quality product that offers great value for money.</p>
-            <p class="product-price">$59.99</p>
-            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <div class="col">
+      <div class="product-card">
+        <img src="images/1.png" alt="Product 1" class="product-img" width="100%" height="auto">
+        <div class="product-card-body">
+          <h5 class="product-title">Product 1</h5>
+          <p class="product-description">This is a short description of Product 1. </p>
+          <p class="product-price">$29.99</p>
+          <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="product-card">
+        <img src="images/1.png" alt="Product 1" class="product-img" width="100%" height="auto">
+        <div class="product-card-body">
+          <h5 class="product-title">Product 1</h5>
+          <p class="product-description">This is a short description of Product 1. </p>
+          <p class="product-price">$29.99</p>
+          <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for other products -->
+  </div>
 </section>
+
 
 
   <section class="content-section pt-5 bg-light">
