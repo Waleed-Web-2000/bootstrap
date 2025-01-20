@@ -58,110 +58,95 @@
       </nav>
     </header>
 
-    <section class="banner-section bg-black py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-6 col-12 text-center text-white pb-4">
-        <h1>Premium Quality Products</h1>
-        <p>Discover the finest collection of home accessories at unbeatable prices.</p>
-
-        <a href="#" class="btn bg-white text-black btn-outline-primary btn-lg mt-3 shadow-sm" 
-   style="border-radius: 30px; padding: 12px 35px;" 
-   data-bs-toggle="modal" data-bs-target="#checkoutModal">
-   Shop Now
-</a>
-      </div>
-      <div class="col-lg-6 col-md-6 col-12 text-center">
-        <div style="position: relative; padding-top: 31.25%;"> <!-- 1920x600 = 31.25% ratio -->
-          <img src="images/banner.svg" alt="Banner" class="img-fluid" width="1920" height="600" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center;">
-        </div>
-      </div>
-    </div>
-  </div>
+    
+    <section>
+  <nav aria-label="breadcrumb" class="p-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Shop</li>
+    </ol>
+  </nav>
 </section>
 
-
-    <section class="container mb-5">
-  <div class="row p-5 text-center">
-    <div class="col-12">
-      <h2 class="text-uppercase">Our Latest Category</h2>
-      <p>Latest updates and articles in Technology</p>
-    </div>
-  </div>
-
-  <!-- Row for Products -->
-  <div class="row g-4">
-    <!-- Product 1 -->
-    <div class="col-12 col-md-6 col-lg-6">
-  <div class="product-card shadow-sm border rounded">
-    <img src="images/1.jpeg" alt="Product 1" class="product-img img-fluid rounded-top">
-    <div class="product-card-body">
-      <h5 class="product-title text-center">Mens Collection</h5>
-      <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm d-flex justify-content-center align-items-center"
-         style="border-radius: 30px; padding: 12px 35px;" data-bs-toggle="modal" data-bs-target="#checkoutModal">
-        Shop Now
-      </a>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Product 2 -->
-    <div class="col-12 col-md-6 col-lg-6">
-  <div class="product-card shadow-sm border rounded">
-    <img src="images/1.jpeg" alt="Product 1" class="product-img img-fluid rounded-top">
-    <div class="product-card-body">
-      <h5 class="product-title text-center">Womens Collection</h5>
-      <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm d-flex justify-content-center align-items-center"
-         style="border-radius: 30px; padding: 12px 35px;" data-bs-toggle="modal" data-bs-target="#checkoutModal">
-        Shop Now
-      </a>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Add more products as needed -->
-  </div>
-</section>
-
-
-    <section class="container mb-5">
-      <div class="row p-5 text-center">
-        <div class="col-12">
-          <h2 class="text-uppercase">Our Latest Items</h2>
-          <p>Latest updates and articles in Technology</p>
+<section class="container-fluid mb-5">
+  <div class="row">
+    <!-- Sidebar for Filters and Categories -->
+    <aside class="col-md-3 col-lg-2 bg-black p-4 rounded text-white mb-3">
+      <h4 class="text-center mb-4">Filters</h4>
+      
+      <!-- Categories Dropdown -->
+      <div class="mb-4">
+        <h5>Categories</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Category
+          </button>
+          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
+            <li><a class="dropdown-item" href="#">Category 1</a></li>
+            <li><a class="dropdown-item" href="#">Category 2</a></li>
+            <li><a class="dropdown-item" href="#">Category 3</a></li>
+            <li><a class="dropdown-item" href="#">Category 4</a></li>
+          </ul>
         </div>
       </div>
+
+      <div class="mb-4">
+        <h5>Latest Items</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary w-100 dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Items
+          </button>
+          <ul class="dropdown-menu w-100" aria-labelledby="categoryDropdown">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+            <li><a class="dropdown-item" href="#">Item 3</a></li>
+            <li><a class="dropdown-item" href="#">Item 4</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Price Range Filter -->
+      <div class="mb-4">
+        <h5>Price Range</h5>
+        <input type="range" class="form-range" id="priceRange" min="0" max="100" step="5">
+        <p class="text-center" id="priceValue">$0 - $100</p>
+      </div>
+
+      <!-- More Filters can be added here -->
+    </aside>
+
+    <!-- Main Content: Products -->
+    <div class="col-md-9 col-lg-10">
+      <h2 class="text-center mb-4">Our Latest Items</h2>
 
       <!-- Row for Products -->
-      <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         <!-- Product 1 -->
         <div class="col">
-          <div class="product-card">
-            <img src="images/1.jpeg" alt="Product 1" class="product-img">
-            <div class="product-card-body">
-              <h5 class="product-title">Product 1</h5>
-              <p class="product-description">This is a short description of Product 1.</p>
-              <p class="product-price">$29.99</p>
+          <div class="card shadow-sm border-light rounded">
+            <img src="images/1.jpeg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">This is a short description of Product 1.</p>
+              <p class="card-price text-muted">$29.99</p>
               <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" 
    style="border-radius: 30px; padding: 12px 35px;" 
    data-bs-toggle="modal" data-bs-target="#checkoutModal">
    Add to Cart
 </a>
+
             </div>
           </div>
         </div>
 
         <!-- Product 2 -->
         <div class="col">
-          <div class="product-card">
-            <img src="images/1.jpeg" alt="Product 2" class="product-img">
-            <div class="product-card-body">
-              <h5 class="product-title">Product 2</h5>
-              <p class="product-description">A great product for everyday use. Reliable and affordable!</p>
-              <p class="product-price">$39.99</p>
+          <div class="card shadow-sm border-light rounded">
+            <img src="images/1.jpeg" alt="Product 2" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">A great product for everyday use. Reliable!</p>
+              <p class="card-price text-muted">$39.99</p>
               <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" 
    style="border-radius: 30px; padding: 12px 35px;" 
    data-bs-toggle="modal" data-bs-target="#checkoutModal">
@@ -173,12 +158,12 @@
 
         <!-- Product 3 -->
         <div class="col">
-          <div class="product-card">
-            <img src="images/1.jpeg" alt="Product 3" class="product-img">
-            <div class="product-card-body">
-              <h5 class="product-title">Product 3</h5>
-              <p class="product-description">Stylish and functional. Perfect for any occasion.</p>
-              <p class="product-price">$49.99</p>
+          <div class="card shadow-sm border-light rounded">
+            <img src="images/1.jpeg" alt="Product 3" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Stylish and functional. Perfect for any occasion.</p>
+              <p class="card-price text-muted">$49.99</p>
               <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" 
    style="border-radius: 30px; padding: 12px 35px;" 
    data-bs-toggle="modal" data-bs-target="#checkoutModal">
@@ -190,12 +175,12 @@
 
         <!-- Product 4 -->
         <div class="col">
-          <div class="product-card">
-            <img src="images/1.jpeg" alt="Product 4" class="product-img">
-            <div class="product-card-body">
-              <h5 class="product-title">Product 4</h5>
-              <p class="product-description">High-quality product that offers great value for money.</p>
-              <p class="product-price">$59.99</p>
+          <div class="card shadow-sm border-light rounded">
+            <img src="images/1.jpeg" alt="Product 4" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Product 4</h5>
+              <p class="card-text">High-quality product that offers great value.</p>
+              <p class="card-price text-muted">$59.99</p>
               <a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" 
    style="border-radius: 30px; padding: 12px 35px;" 
    data-bs-toggle="modal" data-bs-target="#checkoutModal">
@@ -204,26 +189,17 @@
             </div>
           </div>
         </div>
+        
+        <!-- Repeat Products as needed -->
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="content-section bg-light">
-      <div class="container">
-        <div class="row p-5 text-center">
-          <div class="col-12">
-            <h1 class="text-uppercase">Lorem Ipsum is simply dummy text</h1>
-          </div>
-        </div>
-        <div class="row p-5 text-center">
-          <div class="col-12">
-            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Footer Section -->
-<footer class="footer bg-black text-white py-5">
+    <footer class="footer bg-black text-white py-5">
   <div class="container">
     <div class="row">
       <!-- About Us Section -->
