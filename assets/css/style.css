@@ -89,6 +89,7 @@
 
     .product-img {
         width: 100%;
+        height: 500px;
         height: auto;
       }
       .banner-title, .banner-subtitle {
