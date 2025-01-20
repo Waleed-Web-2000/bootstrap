@@ -129,9 +129,59 @@
         <a href="cart.html" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" style="border-radius: 30px; padding: 12px 35px;">
           Add to Cart
         </a>
-         <a href="cart.html" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" style="border-radius: 30px; padding: 12px 35px;">
-          Buy Now
-        </a>
+        
+
+        <!-- Buy Now Button to Trigger Modal -->
+<a href="#" class="btn bg-black text-white btn-outline-primary btn-lg mt-3 shadow-sm" 
+   style="border-radius: 30px; padding: 12px 35px;" 
+   data-bs-toggle="modal" data-bs-target="#checkoutModal">
+   Buy Now
+</a>
+
+<!-- Checkout Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content rounded-4 shadow-lg">
+      <div class="modal-header bg-black text-white border-0">
+        <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control rounded-3 shadow-sm" id="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control rounded-3 shadow-sm" id="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label">Shipping Address</label>
+            <textarea class="form-control rounded-3 shadow-sm" id="address" placeholder="123 Street, City" rows="2" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="payment" class="form-label">Payment Method</label>
+            <select class="form-select rounded-3 shadow-sm" id="payment" required>
+              <option selected disabled>Select Payment Method</option>
+              <option value="credit-card">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="cod">Cash on Delivery</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 shadow-sm rounded-pill">Confirm Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
   </div>
